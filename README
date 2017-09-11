@@ -1,3 +1,8 @@
+Special webview build for buggy Xiaomi Mi Pad (mocha) EGL blobs from stock kitkat rom.
+Applied patch patches/mipad-patch.patch
+
+------
+
 Building the Chromium-based WebView in AOSP is no longer supported. WebView can
 now be built entirely from the Chromium source code.
 

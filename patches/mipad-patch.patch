@@ -1,0 +1,32 @@
+diff --git a/gpu/config/gpu_driver_bug_list.json b/gpu/config/gpu_driver_bug_list.json
+index b8f5489ce086..6bf7f9250237 100644
+--- a/gpu/config/gpu_driver_bug_list.json
++++ b/gpu/config/gpu_driver_bug_list.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "gpu driver bug list",
+-  "version": "10.93",
++  "version": "10.94",
+   "entries": [
+     {
+       "id": 1,
+@@ -2542,6 +2542,19 @@
+       "features": [
+         "rely_on_implicit_sync_for_swap_buffers"
+       ]
++    },
++    {
++      "id": 236,
++      "description": "MiPad Nvidia drivers g_ignore_egl_sync_failures work around",
++      "cr_bugs": [123456],
++      "gl_vendor": "NVIDIA.*",
++      "machine_model_name": ["MI PAD"],
++      "os": {
++	"type": "android"
++      },
++      "features": [
++        "ignore_egl_sync_failures"
++      ]
+     }
+   ],
+   "comment": [
